@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+     <link rel="stylesheet" href="formularze.css" type="text/css" />
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Szybki kurs HTML </title>
+</head>
+<body>
+    <section>
+        <header><h2>Szybki kurs HTML</h2>
+            <nav>
+                 <a href="index.html">Podstawy</a>
+                 <a href="tabele.html">Tabele</a>
+                 <a href="formularze.html">Formularze</a>
+                 <a href="galeria.html" title="">Galeria</a>
+                 </nav>
+        </header>
+    </section>
+    <br>
+ <main><h3>Podstawowe znaczniki formularza HTML to</h3>
+        <ul>
+        <li> &lt;form&gt; - znacznik podstawowy zawierający pola formularza </li>
+        <li> &lt;input&gt; - znacznik umożliwia wystawienie różnych pól (pole tekstowe, przycisk typu radio, przycisk typu checkbox) w zależności od wartości jego atrybutu type </li>
+        <li> &lt;select&gt; - pole formularza typu lista rozwijana </li>
+        <li> &lt;textarea&gt; - pole formularza typu obszar tekstowy </li>
+        <li> &lt;button&gt; - pole formularza typu przycisk </li>
+        </ul>
+        <p>
+ </main>
+    <section>
+        <header><h2>Formularz</h2></header>
+            <form action="mailto:mattiadamczyk10@gmail.com" method="post">
+<table>
+    <tr>
+        <td><label for ="nazwisko">Nazwisko :</label></td> 
+        <td><input required pattern="^[A-ZŁŚĄŻŹŚÓĘ][a-złśążźśóę]{1,25}(\s[A-ZŁŚĄŻŹŚÓĘ][a-złśążźśóę]{1,25})?$" id="nazwisko" type="text" name="Nazwisko"/></td>
+    </tr> 
+    <tr>
+        <td><label for ="age">Wiek:</label></td> 
+        <td><input id="age" type="number" name="age" min="0" max="110"/></td>
+    </tr>
+    <tr>
+        <td>Państwo: </td> <td><select id="panstwo">
+            <option> Polska </option>
+            <option> Niemcy </option>
+            <option> Holandia </option>
+         </select></td>
+    </tr> 
+    <tr>
+        <td><label for ="e-mail"> Adres e-mail: </label></td>
+        <td><input required placeholder="twoj-mail@poczta.com" type="email" name="e-mail" id="e-mail" /></td>
+    </tr> 
+</table>
+<b>Zamawiam tutorial z języka: </b><br />
+<br/>
+    <input type="checkbox" name="C" value="C" /> PHP
+    <input type="checkbox" name="Java" value="J" /> C/C++
+    <input type="checkbox" name="PHP" value="PHP" /> Java <br />
+<br/>
+<b>Sposób zapłaty: </b> <br />
+<br/>
+    <input type="radio" name="przegladarka" value="Ff" /> eurocard 
+    <input type="radio" name="przegladarka" value="Ch" /> visa 
+    <input type="radio" name="przegladarka" value="II" />
+przelew bankowy<br />
+    <input type="submit" value="Wyślij" />
+    <input type="reset" value="Anuluj" />
+<br/>
+<br/>
+</form>
+</section>
+<footer> &copy;MA 2022 </footer>
+</body>
+</html>
